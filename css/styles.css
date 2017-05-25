@@ -1,0 +1,35 @@
+html{
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+*, *:before, *:after{
+  -webkit-box-sizing: inherit;
+  -moz-box-sizing: inherit;
+  box-sizing: inherit;
+}
+
+label, input, button {
+  display: block;
+}
+
+input, button {
+  margin-bottom: 15px;
+}
+
+/*Table Styling*/
+
+table {
+  border: 1px solid #1e1e1e;
+  border-radius: 3px;
+}
+
+thead {
+  font-weight: bold;
+  background-color: gray;
+  color: white;
+}
+
+td, th {
+  padding: 1rem;
+}

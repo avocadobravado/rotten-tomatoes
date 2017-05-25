@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link href="css/normalize.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="css/styles.css">
+    <script
+    src="https://code.jquery.com/jquery-3.2.1.js"
+    integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE="
+    crossorigin="anonymous"></script>
+    <script src="js/scripts.js"></script>
+    <title>Rotten Tomatoes</title>
+  </head>
+  <body>
+    <form id="movie-form">
+      <label for="movie">Your favorite movie:</label>
+      <input type="text" id="movie" placeholder="Enter a movie">
+
+      <label for="year">Year the movie was released:</label>
+      <input type="text" id="year" placeholder="Enter the release year">
+
+      <label for="year">The movie's Tomatometer score:</label>
+      <input type="text" id="score" placeholder="Enter the Tomatometer score">
+
+      <button type="submit" class= "button">Add to Database!</button>
+    </form>
+
+    <div id="show-table">
+      <table cellspacing="0">
+        <thead>
+          <tr>
+            <th>Name of movie</th>
+            <th>Year released</th>
+            <th>Tomatometer score
+              <p><button type="submit" name="button" id="sortScoreButton">Sort by score</button></p>
+            </th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr class="sort"></tr>
+        </tbody>
+      </table>
+    </div>
+
+  </body>
+</html>
