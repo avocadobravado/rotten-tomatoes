@@ -9,6 +9,21 @@ html{
   box-sizing: inherit;
 }
 
+h1{
+  text-align: center;
+  font-family: 'Lobster Two';
+  font-size: 4em;
+}
+
+label{
+  font-family:'Raleway';
+  font-size: 1.3em;
+}
+body{
+  background: url("../img/tomatoes.jpg") center center no-repeat fixed;
+  background-size: cover;
+}
+
 label, input, button {
   display: block;
 }
@@ -17,11 +32,27 @@ input, button {
   margin-bottom: 15px;
 }
 
+input{
+  font-size: 1em;
+  padding: 5px;
+  width: 250px;
+}
+
+button{
+  padding: 10px;
+  font-size: 1em;
+}
+
 /*Table Styling*/
 
 table {
   border: 1px solid #1e1e1e;
   border-radius: 3px;
+  margin-right: auto;
+  margin-left: auto;
+  margin-top: 10px;
+  font-family: 'Raleway';
+  font-size: 1.3em;
 }
 
 thead {
@@ -32,4 +63,26 @@ thead {
 
 td, th {
   padding: 1rem;
+}
+
+form{
+background-color: rgba(255,255,255,.7);
+width: 550px;
+border-radius: 10px;
+margin-right: auto;
+margin-left: auto;
+margin-top: 30px;
+padding: 20px;
+text-align: center;
+border: solid 5px #426f5b;
+
+}
+
+button, input{
+  margin-left: auto;
+  margin-right: auto;
+}
+
+tbody{
+  background-color: white;
 }

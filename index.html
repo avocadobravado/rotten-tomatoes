@@ -1,8 +1,10 @@
 <!DOCTYPE html>
 <html>
   <head>
+    <link href="https://fonts.googleapis.com/css?family=Lobster+Two|Raleway" rel="stylesheet">
     <link href="css/normalize.css" rel="stylesheet" type="text/css">
     <link rel="stylesheet" href="css/styles.css">
+
     <script
     src="https://code.jquery.com/jquery-3.2.1.js"
     integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE="
@@ -11,6 +13,7 @@
     <title>Rotten Tomatoes</title>
   </head>
   <body>
+    <h1>Rotten Tomatoes Chart</h1>
     <form id="movie-form">
       <label for="movie">Your favorite movie:</label>
       <input type="text" id="movie" placeholder="Enter a movie">
@@ -22,6 +25,7 @@
       <input type="text" id="score" placeholder="Enter the Tomatometer score">
 
       <button type="submit" class= "button">Add to Database!</button>
+      <p><button type="submit" name="button" id="sort">Sort by score</button></p>
     </form>
 
     <div id="show-table">
@@ -31,7 +35,7 @@
             <th>Name of movie</th>
             <th>Year released</th>
             <th>Tomatometer score
-              <p><button type="submit" name="button" id="sort">Sort by score</button></p>
+
             </th>
           </tr>
         </thead>

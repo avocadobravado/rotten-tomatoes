@@ -1,5 +1,4 @@
 // Back end logic
-
 var movieArray = [];
 
 function AddedMovie (movie, year, score) {
