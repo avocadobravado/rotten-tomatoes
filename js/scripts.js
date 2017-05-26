@@ -18,23 +18,30 @@ $(function() {
       var userYear = parseInt($("#year").val());
       var userScore = parseInt($("#score").val());
 
+    // Reset input function
+      function resetInput() {
+        $("input").val("");
+      }
+
       var newMovie = new AddedMovie(userMovie, userYear, userScore);
       movieArray.push(newMovie);
       multipleScore.push(userScore);
 
-// This will add new movie information directly into the table
+      // This will add new movie information directly into the table
     $("#results").append("<tr><td>"
       + userMovie + "</td><td>"
       + userYear + "</td><td>"
       + userScore + "</td></tr>");
+      resetInput();
   });
 
 //When sort button is clicked
   $("#sort").click(function() {
 
-//Empties previous results to show new sorted table
+    //Empties previous results
     $("#results").empty();
 
+    // Sort items in list from highest to lowest
     var sortedList = movieArray.slice(0);
       sortedList.sort(function(a, b) {
       return b.score - a.score;
